@@ -1,0 +1,61 @@
+h1 {
+background-color: rgb(65, 68, 71);
+    color: rgb(62, 135, 159)    
+}
+body{
+    background-color: rgb(114, 90, 90);
+}
+.sobrenos{
+    background-color: aliceblue;
+}
+li{
+    list-style: none;
+
+}
+a{
+    text-decoration:none
+    ;
+}
+.nos{
+    background-color: rgb(202, 153, 248);
+}
+footer {
+    background-color: #282c34;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px;
+    position: relative;
+}
+#carrito {
+    padding: 20px;
+    background-color: #f4f4f4;
+    border: 1px solid #ddd;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+}
+
+table th, table td {
+    border: 1px solid #ddd;
+    padding: 10px;
+    text-align: left;
+}
+
+table th {
+    background-color: #f2f2f2;
+}
+
+button {
+    background-color: #28a745;
+    color: white;
+    border: none;
+    padding: 10px 15px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #218838;
+}
+

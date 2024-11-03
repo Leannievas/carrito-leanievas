@@ -1,41 +1,126 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Carrito de compras</title>
+    <link rel="shortcut icon" href="./fantasma.png" type="image/x-icon">
+    <link rel="stylesheet" href="estiloqqs.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <title>Quienqueresser</title>
 </head>
-<body> 
-     <img src="imagenes/flor.png.png"  width="200" alt="" class="transparente">
+
+<body>
+
     <header>
-        <h1>Bienvenido a...</h1>
-        <p>Encabezado</p>
-    
+        <img src="./ZjUDco4Lb_1200x0__1.jpg" alt="6000" width="1000">
+        <h1>Bienvenido a Quien Queres Ser</h1>
+    </header>
+
     <nav>
-        <p>Inicio
-            <a href="https://aulasvirtuales.bue.edu.ar/" target="_blank" >aula virtual</a> 
-             <a href="contacto.html">contactos</a> <a href="productos.html">productos</a></p>
+        <a href="file:///C:/Users/Monitos/Desktop/Curso%20de%20front-end/todo%20natural/nosotros.html" target="_blank">Nosotros</a>
+        <a href="file:///C:/Users/Monitos/Desktop/Curso%20de%20front-end/todo%20natural/productos.html" target="_blank">Productos</a>
+        <a href="#carrito">Carrito de Compras</a>
+        <a href="#contacto" target="_blank">Contacto</a>
+        <a href="#mapa">Dónde Encontrarnos</a>
+        <a href="#pagos">Medios de Pago</a>
     </nav>
+
     <main>
-        <header>
-          
-
-        </header>
-        <p>Productos</p>
-        <p>mas informacion aqui</p>
-        <section>
-
+        <section id="pagos">
+            <h2>Medios de Pago</h2>
+            <p>Medios aceptados...</p>
         </section>
 
-    </main> 
-        
-        
-        etiqueta 
-        <p>seccion principal</p>
+        <section id="productos">
+            <h2>Productos</h2>
+            <p>Detalles de los productos que ofrecemos...</p>
+        </section>
+
+        <section id="carrito">
+            <h2>Carrito de Compras</h2>
+            <p>Artículos en tu carrito:</p>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Producto</th>
+                        <th>Cantidad</th>
+                        <th>Precio</th>
+                        <th>Total</th>
+                        <th>Acción</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Producto 1</td>
+                        <td>
+                            <input type="number" value="1" min="1" />
+                        </td>
+                        <td>$10.00</td>
+                        <td>$10.00</td>
+                        <td><button type="button">Eliminar</button></td>
+                    </tr>
+                    <tr>
+                        <td>Producto 2</td>
+                        <td>
+                            <input type="number" value="1" min="1" />
+                        </td>
+                        <td>$15.00</td>
+                        <td>$15.00</td>
+                        <td><button type="button">Eliminar</button></td>
+                    </tr>
+                </tbody>
+            </table>
+            <h3>Total: $25.00</h3>
+            <button type="button">Proceder al Pago</button>
+        </section>
+
+        <section id="video">
+            <h2>Nuestro Arte</h2>
+            <video width="600" height="450" controls>
+                <source src="./2024-05-26-193423835.mp4" type="video/mp4">
+                Tu navegador no soporta el video.
+            </video>
+        </section>
+
+        <section id="contacto">
+            <h2>Contacto</h2>
+            <h3><strong>Déjanos tu consulta</strong></h3>
+            <form action="https://formspree.io/f/xyzyebwr" method="post">
+                <label for="nombre">Nombre</label>
+                <input name="nombre" id="nombre" type="text" placeholder="Escribe tu nombre">
+                
+                <label for="apellido">Apellido</label>
+                <input name="apellido" id="apellido" type="text" placeholder="Escribe tu apellido">
+
+                <label for="e-mail">E-mail</label>
+                <input name="e-mail" id="e-mail" type="text" placeholder="Escribe tu E-mail">
+
+                <label for="telefono">Teléfono</label>
+                <input name="telefono" id="telefono" type="text" placeholder="Escribe tu teléfono">
+                
+                <label for="comentarios">Comentarios:</label>
+                <textarea name="comentarios" id="comentarios" rows="5" cols="30"></textarea>
+
+                <input type="submit" value="Enviar">
+                <button type="reset">Reset</button>
+            </form>
+        </section>
+
+        <section id="mapa">
+            <h2>Dónde Encontrarnos</h2>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3283.1570962121077!2d-58.41622912452368!3d-34.62547015864685!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bccb014d06ef4f%3A0xe93947aa3e1df4c5!2sQui%C3%A9n%20queres%20ser!5e0!3m2!1ses-419!2sar!4v1730593127036!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </section>
     </main>
-    <footer>
-        <p>datos de contacto</p>
+
+    <footer id="pagina-footer">
+        <h4>Síguenos en nuestras redes</h4>
+        <ul>
+            <li><a href="https://www.instagram.com/quien_queres_ser/" target="_blank"><i class="fab fa-instagram"></i> Instagram</a></li>
+            <li><a href="https://wa.me/qr/3352H7E4MSDNK1" target="_blank"><i class="fab fa-whatsapp"></i> WhatsApp</a></li>
+            <li><a href="https://www.tiktok.com/@quien_queres_ser?_t=8r4e9hLuoBZ&_r=1" target="_blank"><i class="fab fa-tiktok"></i> TikTok</a></li>
+        </ul>
     </footer>
-    
+
 </body>
 </html>
